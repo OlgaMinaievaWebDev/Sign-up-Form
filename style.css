@@ -7,4 +7,9 @@
 body {
  background-image: linear-gradient(to bottom, #000000, #452124, #873d34, #c56434, #f69823);
  height: 100vh;
+ color: aliceblue;
+}
+
+.sign-up {
+ display: flex;
 }
