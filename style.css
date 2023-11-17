@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap");
 
 * {
   margin: 0;
@@ -64,8 +65,154 @@ body {
 }
 
 .right-side {
+  height: 100%;
+  max-width: 65%;
+}
+
+.right-side span {
+  color: #7450ec;
+  text-transform: uppercase;
+}
+
+.top {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  height: 30%;
+  width: 90%;
+  justify-content: space-around;
   align-items: center;
+  padding: 3rem 2rem;
+  line-height: 1.5;
+}
+
+.top h1 {
+  margin-bottom: 1rem;
+}
+
+.form-container {
+  padding: 2rem 2rem;
+  height: 50%;
+  margin-bottom: 3rem;
+}
+
+.signup-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+fieldset {
+  display: flex;
+  gap: 3rem;
+  margin: 10px 0;
+  border: none;
+}
+
+.first-name,
+.last-name,
+.email,
+.phone,
+.password,
+.confirm-password {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  width: 40%;
+}
+
+label {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="phone"],
+input[type="password"],
+input[type="confirm-password"] {
+  padding: 5px;
+  margin: 3px 0;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  background-color: #fafafa;
+  border: 0;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  transition: 0.3s box-shadow;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="phone"]:hover,
+input[type="password"]:hover,
+input[type="confirm-password"]:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="phone"]:focus,
+input[type="password"]:focus,
+input[type="confirm-password"]:focus {
+  outline-color: #f69823;
+  box-shadow: none;
+}
+
+.button-area {
+  padding-left: 2rem;
+}
+
+.button-area p {
+  font-weight: 800;
+}
+
+.btn {
+  font-weight: 0;
+  font-size: 14px;
+  color: #fff;
+  background-color: #7450ec;
+  padding: 10px 30px;
+  border: 2px solid #7450ec;
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+  border-radius: 50px;
+  transition: 1000ms;
+  transform: translateY(0);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+.btn:hover {
+  transition: 1000ms;
+  padding: 10px 50px;
+  transform: translateY(-0px);
+  background-color: #fff;
+  color: #7450ec;
+  border: solid 2px #7450ec;
+}
+
+.login {
+  box-shadow: inset 0px 1px 0px 0px #ffffff;
+  background: linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+  background-color: #ffffff;
+  border-radius: 6px;
+  border: 1px solid #dcdcdc;
+  display: inline-block;
+  cursor: pointer;
+  color: #7450ec;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 4px 12px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ffffff;
+  margin-left: 5px;
+}
+.login:hover {
+  background: linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+  background-color: #f6f6f6;
+}
+.login:active {
+  position: relative;
+  top: 1px;
 }

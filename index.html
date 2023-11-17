@@ -17,40 +17,51 @@
       </div>
       <div class="right-side">
         <div class="top">
-          <h1>Be the first to know</h1>
+          <h1>Be the <span>first</span> to know</h1>
           <p>
-            As subscriber you will stay updated on new events, sales and other
-            great offers
+            As subscriber you will stay updated on <span>new</span> events,
+            sales and other great offers
           </p>
-          <h3>Join our mailing list</h3>
         </div>
         <form action="#" method="post">
-          <div class="signup-area">
-            <h2>Let's keep in touch</h2>
-            <div class="first-name">
-              <label for="name">First name</label>
-              <input type="text" name="first-name" id="name" />
-            </div>
-            <div class="last-name">
-              <label for="lastName">Last name</label>
-              <input type="text" name="last-name" id="lastName" />
-            </div>
-            <div class="email">
-              <label for="email">Email</label>
-              <input type="email" name="email" id="email" />
-            </div>
-            <div class="password">
-              <label for="password">Password</label>
-              <input type="password" name="" id="password" />
-            </div>
-            <div class="confirm-password">
-              <label for="passwordTwo">Confirm Password</label>
-              <input type="password" name="" id="passwordTwo" />
+          <div class="form-container">
+            <div class="signup-area">
+              <h2>Let's keep in touch</h2>
+              <fieldset>
+                <div class="first-name">
+                  <label for="name">First name</label>
+                  <input type="text" name="first-name" id="name" />
+                </div>
+                <div class="last-name">
+                  <label for="lastName">Last name</label>
+                  <input type="text" name="last-name" id="lastName" />
+                </div>
+              </fieldset>
+              <fieldset>
+                <div class="email">
+                  <label for="email">Email</label>
+                  <input type="email" name="email" id="email" />
+                </div>
+                <div class="phone">
+                  <label for="phone">Phone Number</label>
+                  <input type="phone" name="phone" id="phone" />
+                </div>
+              </fieldset>
+              <fieldset>
+                <div class="password">
+                  <label for="password">Password</label>
+                  <input type="password" name="" id="password" />
+                </div>
+                <div class="confirm-password">
+                  <label for="passwordTwo">Confirm Password</label>
+                  <input type="password" name="" id="passwordTwo" />
+                </div>
+              </fieldset>
             </div>
           </div>
-          <div class="down">
-            <button type="submit">Create Account</button>
-            <p>Already have an account? <span>Log in</span></p>
+          <div class="button-area">
+            <button class="btn" type="submit">Create Account</button>
+            <p>Already have an account? <button class="login" type="login">Log in</button></p>
           </div>
         </form>
       </div>
