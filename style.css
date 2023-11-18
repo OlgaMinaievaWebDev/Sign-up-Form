@@ -23,7 +23,6 @@ body {
 .sign-up {
   display: flex;
   width: 80%;
-  height: 80%;
   border-radius: 15px;
 }
 
@@ -222,18 +221,41 @@ input[type="confirm-password"]:focus {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 90%;
-    height: 80%;
+   margin: auto;
   }
 
   .left-side {
-    width: 90%;
+    width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10px;
+    margin-top: 20px;
   }
 
   .right-side {
     max-width: 90%;
   }
+
+  .logo img {
+  max-height: 100px;
+  max-width: 20%;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+}
+
+.first-name,
+.last-name,
+.email,
+.phone,
+.password,
+.confirm-password {
+  width: 80%;
+}
+
+body {
+  height: 100%;
+}
 }
