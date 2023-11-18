@@ -23,48 +23,84 @@
             sales and other great offers
           </p>
         </div>
-        <form action="#" method="post">
+        <form action="#" method="get">
           <div class="form-container">
             <div class="signup-area">
               <h2>Let's keep in touch</h2>
               <fieldset>
                 <div class="first-name">
                   <label for="name">First name</label>
-                  <input type="text" name="first-name" id="name" />
+                  <input
+                    type="text"
+                    name="first-name"
+                    id="name"
+                    required
+                    maxlength="45"
+                  />
                 </div>
                 <div class="last-name">
                   <label for="lastName">Last name</label>
-                  <input type="text" name="last-name" id="lastName" />
+                  <input
+                    type="text"
+                    name="last-name"
+                    id="lastName"
+                    required
+                    maxlength="45"
+                  />
                 </div>
               </fieldset>
               <fieldset>
                 <div class="email">
                   <label for="email">Email</label>
-                  <input type="email" name="email" id="email" />
+                  <input type="email" name="email" id="email" required />
                 </div>
                 <div class="phone">
                   <label for="phone">Phone Number</label>
-                  <input type="phone" name="phone" id="phone" />
+                  <input
+                    type="phone"
+                    name="phone"
+                    id="phone"
+                    required
+                    minlength="7"
+                    maxlength="10"
+                  />
                 </div>
               </fieldset>
               <fieldset>
                 <div class="password">
                   <label for="password">Password</label>
-                  <input type="password" name="" id="password" />
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    autocomplete="on"
+                    required
+                    minlength="3"
+                  />
+                  <div class="passMatch"></div>
                 </div>
-                <div class="confirm-password">
-                  <label for="passwordTwo">Confirm Password</label>
-                  <input type="password" name="" id="passwordTwo" />
+                <div class="confirmPassword">
+                  <label for="confirmPassword">Confirm Password</label>
+                  <input
+                    type="password"
+                    id="confirmPassword"
+                    required
+                    minlength="3"
+                  />
                 </div>
               </fieldset>
             </div>
           </div>
           <div class="button-area">
             <button class="btn" type="submit">Create Account</button>
-            <p>Already have an account? <button class="login" type="login">Log in</button></p>
+            <p>
+              Already have an account?
+              <button class="login" type="login">Log in</button>
+            </p>
           </div>
         </form>
       </div>
     </section>
+    <script src="./index.js"></script>
   </body>
 </html>

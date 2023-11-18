@@ -59,6 +59,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 2px;
   text-shadow: 2px 2px 0px #ffffff, 5px 4px 0px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
 }
 
 .right-side {
@@ -156,6 +157,7 @@ input[type="confirm-password"]:focus {
 
 .button-area {
   padding-left: 2rem;
+  margin-bottom: 2rem;
 }
 
 .button-area p {
@@ -203,7 +205,7 @@ input[type="confirm-password"]:focus {
   padding: 4px 12px;
   text-decoration: none;
   text-shadow: 0px 1px 0px #ffffff;
-  margin-left: 5px;
+  margin-left: 1rem;
 }
 .login:hover {
   background: linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
@@ -214,6 +216,11 @@ input[type="confirm-password"]:focus {
   top: 1px;
 }
 
+
+.passMatch{
+        font-size:1.2vw;
+        color:red;
+    }
 /* style for mobile devices  */
 
 @media screen and (max-width: 800px) {
@@ -221,7 +228,7 @@ input[type="confirm-password"]:focus {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-   margin: auto;
+    margin: auto;
   }
 
   .left-side {
@@ -237,25 +244,25 @@ input[type="confirm-password"]:focus {
   }
 
   .logo img {
-  max-height: 100px;
-  max-width: 20%;
-}
+    max-height: 100px;
+    max-width: 20%;
+  }
 
-fieldset {
-  display: flex;
-  flex-direction: column;
-}
+  fieldset {
+    display: flex;
+    flex-direction: column;
+  }
 
-.first-name,
-.last-name,
-.email,
-.phone,
-.password,
-.confirm-password {
-  width: 80%;
-}
+  .first-name,
+  .last-name,
+  .email,
+  .phone,
+  .password,
+  .confirm-password {
+    width: 80%;
+  }
 
-body {
-  height: 100%;
-}
+  body {
+    height: 100%;
+  }
 }
